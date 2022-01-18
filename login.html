@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-box">
+        <div class="login-container-frame">
+            <div class="pp-username">
+                <div id="pp-line">
+                    <div id="left-line"></div>
+                    <img id="profile-picture" src="img/profile_picture.jpg" alt="Profile picture">
+                    <div id="right-line"></div>
+                </div>
+                <div id="username">
+                    <h2 id="username-text" title="Username">User Name</h2>
+                </div>
+            </div>
+
+            <div class="user-inputs-button">
+                <div class="user-inputs">
+                    <div id="username-input">
+                        <form class="login uname" method="get" action="sample.php">
+                            <input type="text" id="Uname" name="User_name" maxlength="10" placeholder="username" required>
+                        </form>
+                    </div>
+                    <div id="message-input">
+                        <form class="login" method="get" action="sample.php">
+                            <textarea type="text" id="Umessage" name="User_message" wrap="hard" placeholder="Any message you want to send!!!" required></textarea>
+                            <!-- <input id="btn-reveal" type="submit" value="Reveall"> -->
+                        </form>
+                    </div>
+                </div>
+                <input id="btn-reveal" type="submit" form="message-input" value="Reveall">
+                <!-- <a class="btn-reveal" href="#" type="button">REVEALL</a> -->
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

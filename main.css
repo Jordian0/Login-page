@@ -1,0 +1,353 @@
+:root {
+    --body-background-color: #E2FFF6;
+    --login-button-color: #FFDCB6;
+    --login-dialog-box: #FFF3D0;
+    --input-background-color: #FFFFFF;
+    --login-input-text-color: rgba(0, 0, 0, 0.6);
+
+    --input-dialog-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    --input-text-spacing: 0.001em;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+textarea:focus {
+    background-color: lightblue;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/background_login.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--body-background-color);
+    font-family: Montserrat, Roboto;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 540px;
+    height: 550px;
+    left: calc(50% - 540px/2 - 25px);
+    top: calc(50% - 550px/2 + 30px);
+
+    background: var(--login-dialog-box);
+    mix-blend-mode: normal;
+    box-shadow: 2px 3px 80px rgba(0, 0, 0, 0.59);
+    border-radius: 90px;
+}
+
+.login-container-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 505px;
+    height: 507px;
+    left: 17.5px;
+    top: 21px;
+}
+
+.pp-username {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 505px;
+    height: 187px;
+    left: 0px;
+    top: 0px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px 40px 0px;
+}
+
+#pp-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: center;
+    padding: 0px;
+    
+    position: static;
+    width: 489.46px;
+    height: 110px;
+    left: 7.77px;
+    top: 0.5px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px 17px 0px;
+}
+
+#left-line {
+    position: static;
+    width: 181.73px;
+    height: 2.23px;
+    left: 0px;
+    top: 56.11px;
+
+    background: rgba(0, 0, 0, 0.28);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px;
+}
+
+#profile-picture {
+    position: static;
+    width: 110px;
+    height: 110px;
+    left: calc(50% - 110px/2 - 0px);
+    bottom: 0px;
+
+    border-radius: 100%;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+#right-line {
+    position: static;
+    width: 181.73px;
+    height: 2.23px;
+    left: 307.73px;
+    top: 56.11px;
+
+    background: rgba(0, 0, 0, 0.28);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px;
+}
+
+#username {
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 505px;
+    height: 59px;
+    left: 0px;
+    top: 127.5px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px;
+}
+
+#username-text {
+    position: static;
+    width: 505px;
+    height: 59px;
+    left: calc(50% - 505px/2);
+    bottom: 0px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+
+    text-align: center;
+    letter-spacing: -0.015em;
+
+    color: rgba(0, 0, 0, 0.97);
+    mix-blend-mode: normal;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.user-inputs-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 505px;
+    height: 280px;
+    left: 0px;
+    top: 227px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px;
+}
+
+.user-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+
+    position: static;
+    width: 505px;
+    height: 213px;
+    left: 0px;
+    top: 0px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px 37px 0px;
+}
+
+#username-input {
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+
+    position: static;
+    width: 500px;
+    height: 47px;
+    left: 2.5px;
+    top: 0px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px 26px 0px;
+}
+
+#Uname {
+    position: static;
+    width: 500px;
+    height: 47px;
+    left: 2.5px;
+    top: 0px;
+
+    padding: 0px 10px 0px 75px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: var(--input-text-spacing);
+    color: var(--login-input-text-color);
+
+    background-color: var(--input-background-color);
+    background-image: url('./img/user_icon.svg');
+    background-position: 17px 5px;
+    background-repeat: no-repeat;
+
+    box-shadow: var(--input-dialog-box-shadow);
+    border-radius: 35px;
+    border: none;
+    outline: none;
+}
+
+#message-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: normal;
+
+    position: static;
+    width: 500px;
+    height: 140px;
+    left: 2.5px;
+    top: 73px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px;
+}
+
+#Umessage {
+    position: static;
+    width: 500px;
+    height: 140px;
+    left: 2.5px;
+    top: 0px;
+
+    padding: 6.5px 17px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: var(--input-text-spacing);
+    color: var(--login-input-text-color);
+
+    background-color: var(--input-background-color);
+    box-shadow: var(--input-dialog-box-shadow);
+    border-radius: 33px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+#btn-reveal {
+    position: static;
+    width: 458.5px;
+    height: 30px;
+    left: 23.5px;
+    top: 240px;
+
+    padding: 4px 100px;
+    border: none;
+    outline: none;
+
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.004em;
+
+    color: rgba(0, 0, 0, 0.97);
+    text-transform: uppercase;
+    font-feature-settings: 'cpsp' on;
+
+    text-decoration: none;
+    background-color: var(--login-button-color);
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px;
+}
+
+
