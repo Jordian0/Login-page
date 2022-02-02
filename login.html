@@ -23,23 +23,21 @@
                 </div>
             </div>
 
-            <div class="user-inputs-button">
+            <!-- <div class="user-inputs-button"> -->
+            <form class="user-inputs-button" method="post" name="login-page" action="login.php">
                 <div class="user-inputs">
                     <div id="username-input">
-                        <form class="login uname" method="get" action="sample.php">
-                            <input type="text" id="Uname" name="User_name" maxlength="10" placeholder="username" required>
-                        </form>
+                        <input type="text" id="Uname" name="User_name" maxlength="10" placeholder="username" required>
                     </div>
                     <div id="message-input">
-                        <form class="login" method="get" action="sample.php">
-                            <textarea type="text" id="Umessage" name="User_message" wrap="hard" placeholder="Any message you want to send!!!" required></textarea>
-                            <!-- <input id="btn-reveal" type="submit" value="Reveall"> -->
-                        </form>
+                        <textarea type="text" id="Umessage" name="User_message" wrap="soft" placeholder="Any message you want to send!!!" required></textarea>
+                        <!-- <input id="btn-reveal" type="submit" value="Reveall"> -->
                     </div>
                 </div>
-                <input id="btn-reveal" type="submit" form="message-input" value="Reveall">
+                <input id="btn-reveal" type="submit" name="submit" value="Reveall">
                 <!-- <a class="btn-reveal" href="#" type="button">REVEALL</a> -->
-            </div>
+            </form>
+            <!-- </div> -->
         </div>
     </div>
     

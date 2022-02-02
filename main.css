@@ -13,9 +13,6 @@
 *, *::after, *::before {
     box-sizing: border-box;
 }
-textarea:focus {
-    background-color: lightblue;
-}
 
 body {
     margin: 0;
